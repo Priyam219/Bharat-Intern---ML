@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wine Attributes Form</title>
+</head>
+<body>
+  <div class="login">
+  <h1>Wine Attributes</h1>
+  <form action="{{url_for('predict')}}"method="post">
+    <label for="fixed-acidity">Fixed Acidity:</label>
+    <input type="text" id="fixed-acidity" name="fixed-acidity"><br><br>
+
+    <label for="volatile-acidity">Volatile Acidity:</label>
+    <input type="text" id="volatile-acidity" name="volatile-acidity"><br><br>
+
+    <label for="citric-acid">Citric Acid:</label>
+    <input type="text" id="citric-acid" name="citric-acid"><br><br>
+
+    <label for="residual-sugar">Residual Sugar:</label>
+    <input type="text" id="residual-sugar" name="residual-sugar"><br><br>
+
+    <label for="chlorides">Chlorides:</label>
+    <input type="text" id="chlorides" name="chlorides"><br><br>
+
+    <label for="free-sulfur-dioxide">Free Sulfur Dioxide:</label>
+    <input type="text" id="free-sulfur-dioxide" name="free-sulfur-dioxide"><br><br>
+
+    <label for="total-sulfur-dioxide">Total Sulfur Dioxide:</label>
+    <input type="text" id="total-sulfur-dioxide" name="total-sulfur-dioxide"><br><br>
+
+    <label for="density">Density:</label>
+    <input type="text" id="density" name="density"><br><br>
+
+    <label for="ph">pH:</label>
+    <input type="text" id="ph" name="ph"><br><br>
+
+    <label for="sulphates">Sulphates:</label>
+    <input type="text" id="sulphates" name="sulphates"><br><br>
+
+    <label for="alcohol">Alcohol:</label>
+    <input type="text" id="alcohol" name="alcohol"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+  {{prediction_text}}
+</body>
+</html>
